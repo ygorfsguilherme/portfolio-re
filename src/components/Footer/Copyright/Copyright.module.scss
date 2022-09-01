@@ -1,0 +1,22 @@
+@import "styles/base/_colors.scss";
+
+.l-copyright {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 4px solid $blue60;
+  margin-bottom: 10px;
+  background-color: $blue40;
+  color: $white;
+  font-weight: 600;
+
+  p {
+    display: block;
+    margin: 1rem;
+  }
+
+  .c-developer {
+    color: $blue60;
+    text-decoration: none;
+  }
+}

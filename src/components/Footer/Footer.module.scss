@@ -1,0 +1,59 @@
+@import "styles/base/_variable.scss";
+
+.l-contact__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+  color: $white;
+
+  .l-social__area {
+    width: 100%;
+
+    .c-social__list {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+
+      .c-social__item {
+        display: flex;
+        flex-direction: column;
+
+        .c-social__link {
+          display: flex;
+          padding: 6px 6px 6px 0;
+          width: 100px;
+          color: $white;
+
+          &:hover {
+            color: $blue60;
+            text-decoration: underline;
+            transition: color 0.4s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0) {
+  .l-contact__container {
+    flex-direction: column;
+
+    .l-social__area,
+    .l-contact__area {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 690px) {
+  .l-contact__container {
+    flex-direction: row;
+
+    .l-social__area,
+    .l-contact__area {
+      width: 50%;
+    }
+  }
+}
