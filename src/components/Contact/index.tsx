@@ -1,6 +1,6 @@
-import { FormContact } from "components/FormContact";
 import styles from "./Contact.module.scss";
-import { FollowMe } from "../../FollowMe";
+import { FormContact } from "components/Contact/FormContact";
+import { FollowMe } from "components/Contact/FollowMe";
 
 export function Contact() {
   return (

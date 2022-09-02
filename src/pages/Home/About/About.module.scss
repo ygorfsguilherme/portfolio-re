@@ -4,7 +4,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 0;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $blue60;
+    margin: 0;
+    margin-bottom: 6px;
+    padding: 0;
+  }
+
 
   .c-about__me {
     display: flex;
@@ -138,5 +147,9 @@
 @media screen and (max-width: 768px) {
   .l-about__area {
     flex-direction: column-reverse;
+  }
+
+  .l-perfil__area {
+    margin: 0 auto;
   }
 }

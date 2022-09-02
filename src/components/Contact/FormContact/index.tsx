@@ -1,11 +1,11 @@
 import styles from "./FormContact.module.scss";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Button } from "../Button";
+import { Button } from "../../Button";
 import { Input } from "./Input";
 import { IFormInputs } from "interfaces/IFormInputs";
 import axios from "axios";
-import { Alert } from "../Alert";
+import { Alert } from "../../Alert";
 import { TitleSection } from "components/TitleSection";
 import { messageError, setMessageError } from "state/hook/messageError";
 import { schema } from "./schemas/Resgister";

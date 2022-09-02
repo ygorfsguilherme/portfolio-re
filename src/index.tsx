@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "index.scss";
 import { RecoilRoot } from "recoil";
-import Home from "pages/Home";
+import { AppRouter } from "routes";
+import { Footer } from "components/Footer";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -10,7 +11,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <RecoilRoot>
-      <Home />
+      
+      <AppRouter />
+      <Footer />
     </RecoilRoot>
   </React.StrictMode>
 );

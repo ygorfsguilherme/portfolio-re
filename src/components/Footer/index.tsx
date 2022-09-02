@@ -1,6 +1,6 @@
 import "styles/layout/_container.scss";
-import { Contact } from "./Contact";
-import { Copyright } from "./Copyright";
+import { Contact } from "components/Contact";
+import { Copyright } from "components/Copyright";
 
 export function Footer() {
   return (
