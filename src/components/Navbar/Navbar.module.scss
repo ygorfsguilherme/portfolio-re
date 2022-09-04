@@ -1,0 +1,59 @@
+@import "styles/base/_colors.scss";
+@import "styles/abstract/_box-shadow.scss";
+
+.l-navbar {
+  @include box-shadow;
+  align-items: center;
+  background-color: $blueblack;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 4rem;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+  background-color: #1a2233;
+  padding: 10px;
+  border-radius: 0 0 6px 6px;
+  z-index: 1000;
+  position: fixed;
+
+  .c-navbar__logo {
+    align-items: center;
+    background-color: $blue60;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: $white;
+    display: flex;
+    font-weight: 700;
+    height: 40px;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 40px;
+  }
+
+  .c-navbar__list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    height: 3.5rem;
+
+    .c-navbar__item {
+      padding: 15px;
+      box-sizing: border-box;
+
+      &:hover {
+        border-bottom: 3px solid $blue60;
+      }
+
+      .c-navbar__link {
+        display: flex;
+        flex-direction: row;
+        font-weight: 700;
+        color: $white;
+      }
+    }
+  }
+}

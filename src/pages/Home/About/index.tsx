@@ -1,12 +1,9 @@
 import classNames from "classnames";
 import styles from "./About.module.scss";
+import { PerfilImage } from "components/PerfilImage";
+import urls from "data/socialMedia.json";
 
 export function About() {
-  const urls = {
-    github: "https://github.com/ygorfsguilherme",
-    linkedin: "https://linkedin.com/in/ygorfsguilherme/",
-    instagram: "https://www.instagram.com/ygorfsguilherme/",
-  };
 
   return (
     <section className={styles["l-about__area"]} id="about">
@@ -16,7 +13,7 @@ export function About() {
         <p>
           Sou, Ygor Guilherme entusiasta e estudante de desenvolvimento para
           web, participei do programa ONE - Oracle Next Education da Oracle +
-          ALura. Gosto de resolver problemas e sou fascinado por tecnologia, ela
+          Alura. Gosto de resolver problemas e sou fascinado por tecnologia, ela
           me ajuda a criar soluções que melhor se adpatar aos meus problemas.
         </p>
 
@@ -31,7 +28,7 @@ export function About() {
       </div>
 
       <div className={styles["l-perfil__area"]}>
-        <div className={styles["l-perfil__image"]}></div>
+        <PerfilImage />
 
         <div className={styles["l-social__media"]}>
           <a
