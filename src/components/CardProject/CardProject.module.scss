@@ -1,0 +1,112 @@
+@import "styles/abstract/_box-shadow.scss";
+@import "styles/base/_colors.scss";
+
+.project__area {
+  margin-top: 2.5rem;
+
+  .projects__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, auto));
+    row-gap: 16px;
+    column-gap: 10px;
+    justify-content: space-around;
+
+    .card__project {
+      @include box-shadow;
+      background-color: $blue40;
+      border-radius: 6px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 265px;
+      max-width: 360px;
+      min-width: 310px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+
+      .card__project__image {
+        align-self: center;
+        box-sizing: border-box;
+        max-height: 210px;
+        height: auto;
+        width: 100%;
+      }
+
+      .card__project__button {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        .card__project__link {
+          height: 30px;
+          width: 30px;
+          margin: 4px;
+
+          &--view {
+            background: url("../../assets/view.svg") no-repeat center center;
+          }
+
+          &--code {
+            background: url("../../assets/code.svg") no-repeat center center;
+          }
+        }
+      }
+
+      .card__project__body {
+        background-color: $blue40;
+        bottom: 0;
+        box-sizing: border-box;
+        cursor: default;
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+        justify-self: end;
+        overflow: hidden;
+        padding: 10px;
+        position: absolute;
+        transition: 0.4s;
+        width: 100%;
+
+        .card__project__title {
+          font-size: 1.4rem;
+          padding: 20px 0;
+        }
+
+        .card__project__show__description {
+          background: url("../../assets/arrow.svg") center center no-repeat;
+          box-sizing: border-box;
+          height: 30px;
+          left: 50%;
+          padding: 6px;
+          position: absolute;
+          top: 0;
+          transform: translateX(-50%);
+          width: 30px;
+        }
+
+        &:hover {
+          animation: over 0.6s;
+          height: 65%;
+          transition: all 0.8s;
+
+          .card__project__show__description {
+            transform: translateX(-50%) rotate(180deg);
+            transition: all 0.8s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes over {
+  0% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  }
+}
