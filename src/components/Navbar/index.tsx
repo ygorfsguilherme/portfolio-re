@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "styles/layout/_container.scss";
 import styles from "./Navbar.module.scss";
 
@@ -5,25 +6,27 @@ export function Navbar() {
   return (
     <div className="l-container">
       <nav className={styles["l-navbar"]}>
-        <a href="/" className={styles["c-navbar__logo"]}>
+        <Link to="/" className={styles["c-navbar__logo"]}>
           YG
-        </a>
+        </Link>
 
         <ul className={styles["c-navbar__list"]}>
           <li className={styles["c-navbar__item"]}>
-            <a className={styles["c-navbar__link"]} href="#about">
+            <Link className={styles["c-navbar__link"]} to="/#about">
               Sobre
-            </a>
+            </Link>
           </li>
 
           <li className={styles["c-navbar__item"]}>
-            <a className={styles["c-navbar__link"]} href="#skills">
+            <Link className={styles["c-navbar__link"]} to="/#skills">
               Skills
-            </a>
+            </Link>
           </li>
 
           <li className={styles["c-navbar__item"]}>
             <a
+              target="__blank"
+              rel="noopener noreferrer"
               className={styles["c-navbar__link"]}
               href="https://cursos.alura.com.br/emprega-one/profile/ygorfsguilherme"
             >
@@ -32,15 +35,15 @@ export function Navbar() {
           </li>
 
           <li className={styles["c-navbar__item"]}>
-            <a className={styles["c-navbar__link"]} href="/project">
+            <Link className={styles["c-navbar__link"]} to="/projects">
               Projetos
-            </a>
+            </Link>
           </li>
 
           <li className={styles["c-navbar__item"]}>
-            <a className={styles["c-navbar__link"]} href="#contact">
+            <Link className={styles["c-navbar__link"]} to="#contact">
               Contato
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

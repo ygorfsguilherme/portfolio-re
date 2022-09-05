@@ -57,7 +57,7 @@ export function About() {
               styles["c-social__media"],
               styles["c-social__media--instagram"]
             )}
-            href={urls.instagram}
+            href={urls.discord}
             target="_blank"
             rel="noreferrer"
           >

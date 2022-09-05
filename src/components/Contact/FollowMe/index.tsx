@@ -1,5 +1,6 @@
 import { TitleSection } from "components/TitleSection";
 import styles from "./FollowMe.module.scss";
+import urls from "data/socialMedia.json";
 
 export function FollowMe() {
   return (
@@ -10,7 +11,7 @@ export function FollowMe() {
         <li className={styles["c-social__item"]}>
           <a
             className={styles["c-social__link"]}
-            href="https://linkedin.com/in/ygorfsguilherme/"
+            href={urls.linkedin}
             target="_blank"
             rel="noreferrer"
           >
@@ -18,7 +19,7 @@ export function FollowMe() {
           </a>
           <a
             className={styles["c-social__link"]}
-            href="https://github.com/ygorfsguilherme"
+            href={urls.github}
             target="_blank"
             rel="noreferrer"
           >
@@ -26,11 +27,11 @@ export function FollowMe() {
           </a>
           <a
             className={styles["c-social__link"]}
-            href="https://www.instagram.com/ygorfsguilherme/"
+            href={urls.discord}
             target="_blank"
             rel="noreferrer"
           >
-            Instagram
+            Discord
           </a>
         </li>
       </ul>

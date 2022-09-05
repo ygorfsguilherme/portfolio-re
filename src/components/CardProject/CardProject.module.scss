@@ -2,11 +2,11 @@
 @import "styles/base/_colors.scss";
 
 .project__area {
-  margin-top: 2.5rem;
+  margin-top: 0;
 
   .projects__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(310px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(320px, auto));
     row-gap: 16px;
     column-gap: 10px;
     justify-content: space-around;
@@ -25,12 +25,18 @@
       position: relative;
       width: 100%;
 
+      &:hover .card__project__image {
+        filter: grayscale(0);
+        transition: all 1s ease-in-out;
+      }
+
       .card__project__image {
         align-self: center;
         box-sizing: border-box;
         max-height: 210px;
         height: auto;
         width: 100%;
+        filter: grayscale(1);
       }
 
       .card__project__button {
@@ -47,10 +53,22 @@
 
           &--view {
             background: url("../../assets/view.svg") no-repeat center center;
+            filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.607));
+
+            &:hover {
+              background: url("../../assets/view-hover.svg") no-repeat center
+                center;
+              transition: all 3s;
+            }
           }
 
           &--code {
             background: url("../../assets/code.svg") no-repeat center center;
+            filter: drop-shadow(0 0 0.75em rgba(0, 0, 0, 0.607));
+            &:hover {
+              background: url("../../assets/code-hover.svg") no-repeat center
+                center;
+            }
           }
         }
       }
