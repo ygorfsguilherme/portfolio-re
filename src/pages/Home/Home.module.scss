@@ -1,3 +1,82 @@
-.home {
-  color: white;
+@import "styles/base/_colors.scss";
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cite {
+    width: 100%;
+    max-width: 550px;
+    font-size: 1.2rem;
+    padding: 40px 20px 20px 20px;
+
+    &::after {
+      content: "_";
+      margin-left: 3px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      to {opacity: 0;}
+      from {opacity: 1;}
+    }
+  }
+}
+.projects__section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .projects__link {
+    display: flex;
+    color: $white;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.3rem;
+
+    &::after {
+      content: url("../../assets/arrow.svg");
+      padding-top: 4px;
+      margin-left: 10px;
+      align-self: center;
+      height: 20px;
+      width: 20px;
+      transform: rotate(90deg);
+    }
+
+    &:hover {
+      transform: translateX(10px);
+      transition: all .5s ease-in-out;
+      color: $blue60;
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .about {
+    flex-direction: column;
+
+    .about__skills {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+
+    .about__skills {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+    }
+  }
 }

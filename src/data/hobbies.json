@@ -1,0 +1,18 @@
+[
+	{	
+		"image": "https://raw.githubusercontent.com/ygorfsguilherme/portfolio/0a8510f8824321ff678f9387381f11796d43519a/src/assets/img/icon/hobbies/leitura.svg",
+		"message": "Ler é algo que me faz criativo, adoro ler bons manga."
+	},
+
+	{	
+
+		"image": "https://raw.githubusercontent.com/ygorfsguilherme/portfolio/0a8510f8824321ff678f9387381f11796d43519a/src/assets/img/icon/hobbies/cozinha.svg",
+		"message": "Gosto de mistura ingredientes e ver algo surgindo."
+	},
+
+	{	
+
+		"image": "https://raw.githubusercontent.com/ygorfsguilherme/portfolio/0a8510f8824321ff678f9387381f11796d43519a/src/assets/img/icon/hobbies/filme.svg",
+		"message": "Adoro assistir filmes e series. Principalmente de ficção cientifica."
+	}
+]

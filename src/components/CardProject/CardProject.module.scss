@@ -53,21 +53,21 @@
 
           &--view {
             background: url("../../assets/view.svg") no-repeat center center;
-            filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.607));
 
             &:hover {
               background: url("../../assets/view-hover.svg") no-repeat center
                 center;
-              transition: all 3s;
+              filter: drop-shadow(0 0 0.7em rgb(255, 255, 255));
             }
           }
 
           &--code {
             background: url("../../assets/code.svg") no-repeat center center;
-            filter: drop-shadow(0 0 0.75em rgba(0, 0, 0, 0.607));
+
             &:hover {
               background: url("../../assets/code-hover.svg") no-repeat center
                 center;
+              filter: drop-shadow(0 0 0.7em rgb(255, 255, 255));
             }
           }
         }

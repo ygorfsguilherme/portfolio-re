@@ -12,18 +12,6 @@ export function Navbar() {
 
         <ul className={styles["c-navbar__list"]}>
           <li className={styles["c-navbar__item"]}>
-            <Link className={styles["c-navbar__link"]} to="/#about">
-              Sobre
-            </Link>
-          </li>
-
-          <li className={styles["c-navbar__item"]}>
-            <Link className={styles["c-navbar__link"]} to="/#skills">
-              Skills
-            </Link>
-          </li>
-
-          <li className={styles["c-navbar__item"]}>
             <a
               target="__blank"
               rel="noopener noreferrer"
@@ -35,15 +23,15 @@ export function Navbar() {
           </li>
 
           <li className={styles["c-navbar__item"]}>
-            <Link className={styles["c-navbar__link"]} to="/projects">
+            <a className={styles["c-navbar__link"]} href="#projects">
               Projetos
-            </Link>
+            </a>
           </li>
 
           <li className={styles["c-navbar__item"]}>
-            <Link className={styles["c-navbar__link"]} to="#contact">
+            <a className={styles["c-navbar__link"]} href="#contact">
               Contato
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

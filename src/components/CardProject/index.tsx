@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import classNames from "classnames";
-import { TitleSection } from "components/TitleSection";
 import { IProjects } from "interfaces/IProjects";
 import styles from "./CardProject.module.scss";
 
@@ -11,8 +10,6 @@ export function CardProject({ projects }: Props) {
 
   return (
     <section className={styles["project__area"]}>
-      <TitleSection>Projetos</TitleSection>
-
       <article className={styles["projects__container"]}>
         {projects.map((project, key) => (
           <div className={styles["card__project"]} key={key}>

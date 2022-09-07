@@ -1,0 +1,30 @@
+@import "styles/abstract/_box-shadow.scss";
+@import "styles/base/_colors.scss";
+
+.l-carrossel {
+  @include box-shadow;
+  align-items: center;
+  background-color: $blue40;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  overflow: hidden;
+  width: 300px;
+
+  .l-carrossel__container {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.4s ease-in-out;
+
+    .c-card__icon {
+      align-items: center;
+      box-sizing: border-box;
+      display: flex;
+      height: 75px;
+      justify-content: center;
+      padding: 6px;
+      width: 75px;
+    }
+  }
+}

@@ -1,3 +1,32 @@
-.home {
-  color: white;
+@import "styles/base/_colors.scss";
+
+.projects__section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .projects__link {
+    display: flex;
+    color: $white;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.3rem;
+
+    &::after {
+      content: url("../../assets/arrow.svg");
+      padding-top: 4px;
+      margin-left: 10px;
+      align-self: center;
+      height: 20px;
+      width: 20px;
+      transform: rotate(90deg);
+    }
+
+    &:hover {
+      transform: translateX(10px);
+      transition: all .5s ease-in-out;
+      color: $blue60;
+    }
+  }
 }
