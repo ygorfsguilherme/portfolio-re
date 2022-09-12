@@ -1,5 +1,5 @@
 
-### <img src="https://cdn-icons-png.flaticon.com/512/1835/1835211.png" style="width:30px; height: 30px;" /> Sobre
+### <img src="https://cdn-icons-png.flaticon.com/512/3463/3463662.png" style="width:30px; height: 30px;" /> Sobre
 
 Esse portfolio foi desenvolvido para expor informações relevantes sobre mim e meus principais projetos. Inicialmente ele foi escrito em javascript, css/sass e html. Posteriomente reescrito em react com typescript.
 
